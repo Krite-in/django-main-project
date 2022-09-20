@@ -3,10 +3,10 @@ from django.contrib import admin
 from . import views
 urlpatterns = [
     path('',views.index,name='index'),
-    path('',views.about,name='about'),
-    path('',views.account,name='account'),
-    path('',views.tour,name='tour'),
-    path('',views.gallery,name='gallery'),
+    path('about/',views.about,name='about'),
+    path('account/',views.account,name='account'),
+     path('tour/',views.tour,name='tour'),
+    path('gallery/',views.gallery,name='gallery'),
     
 ]
 
