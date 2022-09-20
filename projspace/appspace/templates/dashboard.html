@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="image/tab_logo.png">
+	<link rel="stylesheet" type="text/css" href="css/dashboard.style.css">
+	<title>
+		Space Reach
+	</title>
+</head>
+<body>
+	<div class="main">
+		<div class="navbar">
+			<img src="image/Space_Age_logo.png" class="logo">
+			<nav>
+				<ul>
+					<li><a href="index.html" class="home">Home</a></li>
+					<li><a href="about.html" class="about">About</a></li>
+					<li><a href="gallery.html" class="gallery">Gallery</a></li>
+					<li><a href="tour.html" class="tour">Tour</a></li>
+					<li><a href="LogIn.html" class="account">Account</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="content">
+			<div class="user_name">
+				Welcome Hritik
+			</div>
+			<div class="actions">
+				<button class="tab">
+					<a href="#info">
+						<img src="image/id.svg" alt="">
+						<br>Personal info<br>
+						<div class="detail">Provide personal details and how we can reach you</div>
+					</a>
+				</button>
+				<button class="tab">
+					<a href="#security">
+						<img src="image/login.svg" alt="">
+						<br>Login & security<br>
+						<div class="detail">Update your password and secure your account</div>
+					</a>
+				</button>
+				<button class="tab">
+					<a href="#payment">
+						<img src="image/payment.svg" alt="">
+						<br>Payments & payouts<br>
+						<div class="detail">Review payments, payouts, and taxes</div>
+					</a>
+				</button>
+			</div>
+			<div class="actions">
+				<button class="tab">
+					<a href="#work">
+						<img src="image/work.svg" alt="">
+						<br>Travel for work<br>
+						<div class="detail">Add a work email for business trip benefits</div>
+					</a>
+				</button>
+				<button class="tab">
+					<a href="#trip">
+						<img src="image/trip.png" alt="">
+						<br>Book a Trip<br>
+						<div class="detail">Book your next trip to space</div>
+					</a>
+				</button>
+				<button class="tab">
+					<a href="#blog">
+						<img src="image/write.svg" alt="">
+						<br>Write a Blog<br>
+						<div class="detail">Provide you expriance by writing a blog post</div>
+					</a>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="sec" id="info">
+		<div class="form">
+			<form action="submit" class="--info">
+				<label for="Name">Name</label><br>
+					<input type="text" placeholder="Full Name"><br>
+				<label for="gender">Gender</label><br>
+					<select name="gender" placeholder="Other" >
+						<option value="other">Other</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select><br><br>
+				<label for="email">Email address</label><br>
+					<input type="Email" placeholder="Email"><br>
+				<label for="phone">Phone number</label><br>
+					<input type="phone" placeholder="Phone number"><br>
+				<label for="address">Address</label><br>
+					<input type="text" placeholder="Address"><br>
+				<label for="emergency">Emergency Contact</label><br>
+					<input type="text" placeholder="Emergency Contact"><br>
+				<label for="gov_id">Government ID</label><br>
+					<input type="text" placeholder="ID Number"><br>
+				<button type="submit" class="btn">Save</button>
+			</form>
+		</div>
+	</div>
+	<div class="sec" id="security">
+		<div class="form --security">
+			<form action="submit" class="--info">
+				<label for="ID">ID</label><br>
+					<input type="text" placeholder="User ID"><br>
+				<label for="pass">Current Password</label><br>
+					<input type="password" placeholder="CurrentPass"><br>
+				<label for="newpass">New Password</label><br>
+					<input type="password" placeholder="New Password"><br>
+					<label for="confirmpass">Confirm Password</label><br>
+					<input type="password" placeholder="Confirm Password"><br>
+				<button type="submit" class="btn">Save</button>
+			</form>
+		</div>
+	</div>
+	<div class="sec" id="payment">
+		<div class="sec" id="payment">
+			<div class="form --payment">
+				Payment History
+				<div class="pay_info">
+					<table>
+						<tr>
+							<th>
+								Date
+							</th>
+							<th>
+								Time
+							</th>
+							<th>
+								Transcation Id
+							</th>
+							<th>
+								Package
+							</th>
+							<th>
+								Amount
+							</th>
+							<th>
+								Taxes
+							</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sec" id="work">
+		<div class="sec" id="work">
+			<div class="form --work">
+				Travel for Work
+				<form id="admin"class="input-group" action="dashboard.html">
+					<label>Full Name</label><br>
+					<input type="text" placeholder="Name">
+					<label>Contact Info</label><br>
+					<input type="text" placeholder="Contact Info">
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="sec" id="trip">
+		<div class="sec" id="security">
+			<div class="form --security">
+				<form action="submit" class="--info">
+					<label for="ID">ID</label><br>
+						<input type="text" placeholder="User ID"><br>
+					<label for="pass">Current Password</label><br>
+						<input type="password" placeholder="CurrentPass"><br>
+					<label for="newpass">New Password</label><br>
+						<input type="password" placeholder="New Password"><br>
+						<label for="confirmpass">Confirm Password</label><br>
+						<input type="password" placeholder="Confirm Password"><br>
+					<button type="submit" class="btn">Save</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="sec" id="blog">
+		<div class="sec" id="security">
+			<div class="form --security">
+				<form action="submit" class="--info">
+					<label for="ID">ID</label><br>
+						<input type="text" placeholder="User ID"><br>
+					<label for="pass">Current Password</label><br>
+						<input type="password" placeholder="CurrentPass"><br>
+					<label for="newpass">New Password</label><br>
+						<input type="password" placeholder="New Password"><br>
+						<label for="confirmpass">Confirm Password</label><br>
+						<input type="password" placeholder="Confirm Password"><br>
+					<button type="submit" class="btn">Save</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="links">
+		<a href="#" class="mata">Mataverse</a>
+		<a href="#" class="unreal">Unreal</a>
+		<a href="#" class="deeplink">DeepLink</a>
+	</div>
+	<div>
+		<button class="up" onclick="scrollWin()">
+		</button>
+	</div>
+	<script>
+		function scrollWin() {
+		  window.scrollTo(0, 0);
+		}
+	</script>
+</body>
+</html>
