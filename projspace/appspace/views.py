@@ -6,20 +6,20 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 # Create your views here.
 def about(request):
-    template = loader.get_template('index.html')
-    return HttpResponse("<html><body>working</body></html>")
+    template = loader.get_template('about.html')
+    return HttpResponse(template.render())
 def index(request):
     template = loader.get_template('index.html')
     return HttpResponse(template.render())
 def account(request):
-    template = loader.get_template('index.html')
-    return HttpResponse("<html><body>working</body></html>")
+    template = loader.get_template('login.html')
+    return HttpResponse(template.render())
 def tour(request):
-    template = loader.get_template('index.html')
-    return HttpResponse("<html><body>working</body></html>")
+    template = loader.get_template('tour.html')
+    return HttpResponse(template.render())
 def gallery(request):
-    template = loader.get_template('index.html')
-    return render(template)
+    template = loader.get_template('gallery.html')
+    return HttpResponse(template.render())
 def dashboard(request):
-    template = loader.get_template('index.html')
-    return HttpResponse("<html><body>working</body></html>")
+    template = loader.get_template('dashboard.html')
+    return HttpResponse(template.render())
